@@ -1,43 +1,5 @@
 # ========================
-# Clash-ALL 优化配置
-# ========================
-
-# 机场节点订阅
-
-proxy-providers:
-
-  流量光:
-    url: "https://rgergergergerg6555.saojc.xyz/api/v1/client/subscribe?token=bc6598f7a4624c2eecf027ea8dcd001c"
-    type: http
-    interval: 86400
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 300
-    proxy: 直连 
-
-  一份:
-    url: "https://dash.yfjc.xyz/api/v1/client/subscribe?token=b1aa286df5f176bfa1eddb92acab4238"
-    type: http
-    interval: 86400
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 300
-    proxy: 直连    
-
-  硅谷:
-    url: "https://steep-wmoub.baibaid520.workers.dev/sub/a0334f2b-9969-462a-a9ab-00d8b4de0351"
-    type: http
-    interval: 86400
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 300
-    proxy: 直连      
-   
-  猫耳:
-    url: "[订阅地址（机场原始地址/Sub-Store格式化后的地址）]"
+# Clash-ALL 
     type: http
     interval: 86400
     health-check:
