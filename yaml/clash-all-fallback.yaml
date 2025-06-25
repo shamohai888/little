@@ -3,99 +3,20 @@
 # ========================
 
 # 机场节点订阅
+PProviders: &PProviders {type: http, interval: 86400, proxy: DIRECT, health-check: {enable: true, url: 'https://www.gstatic.com/generate_204', interval: 300}}
 
+# 填写订阅,名称不能重复
 proxy-providers:
-
-  火烧云:
-    url: "机场订阅地址"
-    type: http
-    interval: 86400
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 300
-    proxy: 直连 
-    
-  冰云:
-    url: "机场订阅地址"
-    type: http
-    interval: 86400
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 300
-    proxy: 直连    
-
-  小牛:
-    url: "机场订阅地址"
-    type: http
-    interval: 86400
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 300
-    proxy: 直连    
-
-  硅谷:
-    url: "机场订阅地址"
-    type: http
-    interval: 86400
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 300
-    proxy: 直连      
+  火烧云: {<<: *PProviders, url: '订阅地址', override: {additional-prefix: '[火烧云]'}}
+  冰云: {<<: *PProviders, url: '订阅地址', override: {additional-prefix: '[冰云]'}}
+  小牛: {<<: *PProviders, url: '订阅地址', override: {additional-prefix: '[小牛]'}}
+  硅谷: {<<: *PProviders, url: '订阅地址', override: {additional-prefix: '[硅谷]'}}
+  无界: {<<: *PProviders, url: '订阅地址', override: {additional-prefix: '[无界]'}}
+  猫耳: {<<: *PProviders, url: '订阅地址', override: {additional-prefix: '[猫耳]'}}
+  快猫: {<<: *PProviders, url: '订阅地址', override: {additional-prefix: '[快猫]'}}
+  BestVPN: {<<: *PProviders, url: '订阅地址', override: {additional-prefix: '[BestVPN]'}}
+  牛逼: {<<: *PProviders, url: '订阅地址', override: {additional-prefix: '[牛逼]'}}
   
-  无界:
-    url: "机场订阅地址"
-    type: http
-    interval: 86400
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 300
-    proxy: 直连   
-   
-  猫耳:
-    url: "机场订阅地址"
-    type: http
-    interval: 86400
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 300
-    proxy: 直连   
-
-  快猫:
-    url: "机场订阅地址"
-    type: http
-    interval: 86400
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 300
-    proxy: 直连 
-    
-  BestVPN:
-    url: "机场订阅地址"
-    type: http
-    interval: 86400
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 300
-    proxy: 直连     
-
-  牛逼:
-    url: "机场订阅地址"
-    type: http
-    interval: 86400
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 300
-    proxy: 直连      
-
 proxies:
   - {name: 直连, type: direct}
   - {name: 拒绝, type: reject}
