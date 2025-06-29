@@ -6,8 +6,8 @@
 
 proxy-providers:
 
-  火烧云:
-    url: "机场订阅地址"
+    机场聚合:
+    url: "http://192.168.16.8:3008/T3B9dgzBzdRbBF8Aqx7P/download/collection/nin1?target=ClashMeta"
     type: http
     interval: 86400
     health-check:
@@ -16,86 +16,6 @@ proxy-providers:
       interval: 300
     proxy: 直连 
     
-  冰云:
-    url: "机场订阅地址"
-    type: http
-    interval: 86400
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 300
-    proxy: 直连    
-
-  小牛:
-    url: "机场订阅地址"
-    type: http
-    interval: 86400
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 300
-    proxy: 直连    
-
-  硅谷:
-    url: "机场订阅地址"
-    type: http
-    interval: 86400
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 300
-    proxy: 直连      
-  
-  无界:
-    url: "机场订阅地址"
-    type: http
-    interval: 86400
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 300
-    proxy: 直连   
-   
-  猫耳:
-    url: "机场订阅地址"
-    type: http
-    interval: 86400
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 300
-    proxy: 直连   
-
-  快猫:
-    url: "机场订阅地址"
-    type: http
-    interval: 86400
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 300
-    proxy: 直连 
-    
-  BestVPN:
-    url: "机场订阅地址"
-    type: http
-    interval: 86400
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 300
-    proxy: 直连
-
-  牛逼:
-    url: "机场订阅地址"
-    type: http
-    interval: 86400
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 300
-    proxy: 直连
-
 proxies:
   - {name: 直连, type: direct}
   - {name: 拒绝, type: reject}
@@ -171,6 +91,9 @@ dns:
     - +.dler.cloud
     - +.0tk8a3a1q4t94dler.com    
     - +.aerianas.top
+# NutBit
+    - +.nutbit.net   
+    
 
 ipv6: false
 
