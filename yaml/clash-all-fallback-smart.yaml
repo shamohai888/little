@@ -93,7 +93,11 @@ dns:
     - +.aerianas.top
 # NutBit
     - +.nutbit.net   
-    
+# SSRDOG
+    - +.ssrdog.dog
+    - +.ssrdogapp.com
+    - +.ssrdog.vip      
+    - +.ssrdog.com      
 
 ipv6: false
 
