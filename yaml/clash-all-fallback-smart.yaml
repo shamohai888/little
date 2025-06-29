@@ -171,7 +171,14 @@ dns:
     - +.dler.cloud
     - +.0tk8a3a1q4t94dler.com    
     - +.aerianas.top
-
+# NutBit
+    - +.nutbit.net   
+# SSRDOG
+    - +.ssrdog.dog
+    - +.ssrdogapp.com
+    - +.ssrdog.vip      
+    - +.ssrdog.com    
+    
 ipv6: false
 
 # ========================
